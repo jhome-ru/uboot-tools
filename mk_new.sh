@@ -96,7 +96,7 @@ function buildaxg() {
 	cp ${CUR_SOC}/bl30_new.bin.enc $TEMP_BUILD_FOLDER
 	cp ${CUR_SOC}/bl31.bin.enc $TEMP_BUILD_FOLDER
 	./axg/aml_encrypt_axg --bl3enc --input $TEMP_BUILD_FOLDER/bl33.bin --output $TEMP_BUILD_FOLDER/bl33.bin.enc
-	./axg/aml_encrypt_axg --bootmk --output $TEMP_BUILD_FOLDER/u-boot.bin --bl2 $TEMP_BUILD_FOLDER/bl2.n.bin.sig --bl30 $TEMP_BUILD_FOLDER/bl30_new.bin.enc --bl31 $TEMP_BUILD_FOLDER/bl31.bin.enc --bl33 $TEMP_BUILD_FOLDER/bl33.bin.enc
+	./axg/aml_encrypt_axg --bootmk --output $TEMP_BUILD_FOLDER/u-boot.bin --bl2 $TEMP_BUILD_FOLDER/bl2.n.bin.sig --bl30 $TEMP_BUILD_FOLDER/bl30_new.bin.enc --bl31 $TEMP_BUILD_FOLDER/bl31.img.enc --bl33 $TEMP_BUILD_FOLDER/bl33.bin.enc
 }
 
 function buildgxl() {
