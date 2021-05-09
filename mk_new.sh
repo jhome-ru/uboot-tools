@@ -86,6 +86,7 @@ function build() {
 
 	cp -fv "$TEMP_BUILD_FOLDER"/{\
 u-boot.bin,\
+u-boot.bin.sd.bin,\
 u-boot.bin.usb.bl2,\
 u-boot.bin.usb.tpl}\
  "$BUILD_FOLDER/"
