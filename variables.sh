@@ -3,7 +3,6 @@
 
 declare UBOOT_SRC_FOLDER="u-boot"
 declare KBUILD_OUTPUT="build"
-declare MAIN_FOLDER=""
 export UBOOT_SRC_FOLDER MAIN_FOLDER KBUILD_OUTPUT
 
 # build environment
